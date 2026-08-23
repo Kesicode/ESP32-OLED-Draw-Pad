@@ -149,6 +149,7 @@ ESP32-OLED-Draw-Pad/
 │   ├── hardware.jpeg
 │   └── web-interface.png
 ├── README.md
+└── LICENSE   (optional)
 ```
 
 ## 🚀 Future Improvements
@@ -161,6 +162,10 @@ ESP32-OLED-Draw-Pad/
 - Add OTA firmware updates
 - Improve stroke smoothing
 
-## 📄 License
+## © Ownership & Rights
 
-This project is open source. You may modify and build upon it for learning and personal projects.
+**ESP32 OLED Draw Pad** is designed and developed by **KesiCode**.
+
+© 2026 **KesiCode**. **All rights reserved.**
+
+The project name, original source code, documentation, images, and original design are the property of **KesiCode** unless otherwise stated. Third-party libraries and components remain subject to their respective licenses.
