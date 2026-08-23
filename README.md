@@ -2,6 +2,8 @@
 
 A lightweight Wi-Fi drawing pad built with an **ESP32** and a **128×64 I2C OLED display**. Draw from a phone or computer browser and the strokes are transmitted to the ESP32 in real time using **WebSockets** and rendered on the OLED.
 
+![ESP32 OLED Draw Pad](images/project.jpg)
+
 ## ✨ Features
 
 - 🖊️ Draw directly from a browser
@@ -26,6 +28,10 @@ A lightweight Wi-Fi drawing pad built with an **ESP32** and a **128×64 I2C OLED
 | I2C SCL | GPIO 22 |
 | Power | USB |
 
+### Prototype
+
+![OLED and ESP32 hardware](images/oled.jpg)
+
 ## 🔌 Wiring
 
 ```text
@@ -49,15 +55,11 @@ Install these libraries through the Arduino IDE Library Manager:
 - **Adafruit SSD1306**
 - **WebSockets** (by Markus Sattler / Links2004)
 
-The ESP32 Arduino core provides:
-
-- `WiFi.h`
-- `WebServer.h`
-- `Wire.h`
+The ESP32 Arduino core provides `WiFi.h`, `WebServer.h`, and `Wire.h`.
 
 ### Upload
 
-1. Open `src/ESP32_OLED_Draw_Pad.ino` in Arduino IDE.
+1. Open `code/ESP32_OLED_Draw_Pad.ino` in Arduino IDE.
 2. Select your ESP32 board.
 3. Enter your Wi-Fi credentials locally:
 
@@ -87,8 +89,6 @@ Connect your phone/computer to this network and open:
 ```text
 192.168.4.1
 ```
-
-The ESP32's access-point address is also printed on the OLED.
 
 ## 🖥️ How it works
 
@@ -129,27 +129,33 @@ CLR
 ```
 Clear the OLED.
 
+## 📸 Project Gallery
+
+### Web Interface
+
+![Web interface](images/web-interface.jpg)
+
+### Hardware
+
+![Project hardware](images/project.jpg)
+
+### OLED Display
+
+![OLED display](images/oled.jpg)
+
 ## 📁 Project Structure
 
 ```text
 ESP32-OLED-Draw-Pad/
-├── README.md
-├── src/
+├── code/
 │   └── ESP32_OLED_Draw_Pad.ino
-└── images/
-    ├── web-interface.png
-    └── hardware.jpg
+├── images/
+│   ├── project.jpg
+│   ├── oled.jpg
+│   └── web-interface.jpg
+├── README.md
+└── LICENSE   (optional)
 ```
-
-## 📸 Project
-
-### Web Interface
-
-The browser interface provides a 128×64 drawing canvas, live WebSocket status, adjustable pen size, and a clear button.
-
-### Hardware Prototype
-
-The prototype uses an ESP32 development board connected to a 128×64 OLED through I2C.
 
 ## 🚀 Future Improvements
 
