@@ -149,7 +149,6 @@ ESP32-OLED-Draw-Pad/
 │   ├── hardware.jpeg
 │   └── web-interface.png
 ├── README.md
-└── LICENSE   (optional)
 ```
 
 ## 🚀 Future Improvements
