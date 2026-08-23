@@ -2,7 +2,7 @@
 
 A lightweight Wi-Fi drawing pad built with an **ESP32** and a **128×64 I2C OLED display**. Draw from a phone or computer browser and the strokes are transmitted to the ESP32 in real time using **WebSockets** and rendered on the OLED.
 
-![ESP32 OLED Draw Pad](images/project.jpg)
+![ESP32 OLED Draw Pad](images/web-interface.png)
 
 ## ✨ Features
 
@@ -30,7 +30,7 @@ A lightweight Wi-Fi drawing pad built with an **ESP32** and a **128×64 I2C OLED
 
 ### Prototype
 
-![OLED and ESP32 hardware](images/oled.jpg)
+![OLED and ESP32 hardware](images/hardware.jpeg)
 
 ## 🔌 Wiring
 
@@ -133,15 +133,11 @@ Clear the OLED.
 
 ### Web Interface
 
-![Web interface](images/web-interface.jpg)
+![Web interface](images/web-interface.png)
 
-### Hardware
+### Hardware Prototype
 
-![Project hardware](images/project.jpg)
-
-### OLED Display
-
-![OLED display](images/oled.jpg)
+![OLED and ESP32 hardware](images/hardware.jpeg)
 
 ## 📁 Project Structure
 
@@ -150,9 +146,8 @@ ESP32-OLED-Draw-Pad/
 ├── code/
 │   └── ESP32_OLED_Draw_Pad.ino
 ├── images/
-│   ├── project.jpg
-│   ├── oled.jpg
-│   └── web-interface.jpg
+│   ├── hardware.jpeg
+│   └── web-interface.png
 ├── README.md
 └── LICENSE   (optional)
 ```
